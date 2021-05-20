@@ -15,5 +15,9 @@ p {
     text-align: right;
 }
 
+img {
+    float: left;
+}
+
 /* list in reverse */
 .reverse { display: flex; flex-direction: column-reverse; }
