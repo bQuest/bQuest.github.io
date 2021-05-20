@@ -15,10 +15,10 @@ p {
     text-align: right;
 }
 
-/* img {
-    float: left;
-    size: 44px;
-} */
+img {
+    width: auto;
+    height: auto;
+}
 
 .inline {
     display: inline-block;
