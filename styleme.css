@@ -1,0 +1,16 @@
+body {
+    background-color: darkslategray;
+    font-family: Arial, Arial Black, Verdana, Trebuchet Ms, Georgia, Tahoma, Courier New, 'Times New Roman';
+    font-size: medium;
+    
+}
+
+h3 {
+    color: greenyellow;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+p {
+    text-align: right;
+}
