@@ -15,9 +15,16 @@ p {
     text-align: right;
 }
 
-img {
+/* img {
     float: left;
     size: 44px;
+} */
+
+.inline {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
 }
 
 /* list in reverse */
