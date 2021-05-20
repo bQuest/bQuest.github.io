@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategray;
+    background-color: lightblue;
     font-family: Arial, Arial Black, Verdana, Trebuchet Ms, Georgia, Tahoma, Courier New, 'Times New Roman';
     font-size: medium;
     
@@ -17,6 +17,7 @@ p {
 
 img {
     float: left;
+    size: 100px;
 }
 
 /* list in reverse */
