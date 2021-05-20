@@ -6,7 +6,7 @@ body {
 }
 
 h3 {
-    color: rgba(rgb(0, 47, 255), rgb(6, 177, 6), rgb(4, 4, 63), alpha);
+    color: gold;
     font-weight: lighter;
     font-style: oblique;
 }
@@ -46,7 +46,7 @@ img {
 a:link{color: #FF0000;}
 
 /* visited link */
-a:visited{color: #00FF00;}
+a:visited{color: #4a4952;}
 
 /* mouse over link */
 a:hover{color: #FF00FF;}
