@@ -53,3 +53,8 @@ a:hover{color: #FF00FF;}
 
 /* click on a link */
 a:active {color: #0000FF;}
+
+#happy{
+    background-image: url('happy.jpg');
+    background-repeat: no-repeat;
+}
