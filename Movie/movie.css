@@ -14,10 +14,20 @@ body {
     background-image: url("images/bannerbg.png");
     background-repeat: repeat-y;
 }
+
 h1 {
     text-align: center;
     font-size: 24;
     font-weight: bold;
     font-family: Tahoma, Verdana, sans-serif;
     text-shadow: #999999;
+}
+
+.content {
+    width: 800px;
+    align-content: center;
+    border: 4px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 20px;
 }
