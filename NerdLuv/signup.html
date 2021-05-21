@@ -5,31 +5,34 @@
         <link rel="stylesheet" href="nerdluv.css" type="text/css">
     </head>
     <body>
-        <form action="signup-submit.js">
-            <fieldset>
-                <legend>New User Signup</legend>
-                <strong>Name:</strong>  
-                    <input type="text" max ="16" name="username">
-                <strong>Gender:</strong> 
-                    <p>
-                        <input type="radio" name="gender"> Male
-                        <input type="radio" name="gender" > Female
-                    </p>
-                <strong>Age:</strong>
-                    <input type="text" name="age" maxlength="2" max="6">
-                <strong>Personality type:</strong> 
-                    <input type="text" name="personality" max="6"> 
-                    <label>(<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp"> Don't know yout type?)</a> </label>
-                <strong>Favourite OS:</strong> <select name="favos" id="">
-                                <option value="windows98" selected>Windows</option> 
-                                <option value="macos">Mac OS X</option>                                
-                                <option value="lin">Linux</option>
-                                </select>
-                <strong>Seeking age:</strong> <input type="text" name="min" placeholder="min" max="6" maxlength="2"> to 
-                                <input type="text" name="max" placeholder="max" max="6" maxlength="2">
-                <input type="submit" value="Sign Up">
-            </fieldset>
-        </form>
+        <div>
+            <form action="signup-submit.js">
+                <fieldset>
+                    <legend>New User Signup</legend>
+                    <strong>Name:</strong>  
+                        <input type="text" max ="16" name="username">
+                    <strong>Gender:</strong> 
+                        <p>
+                            <input type="radio" name="gender"> Male
+                            <input type="radio" name="gender" > Female
+                        </p>
+                    <strong>Age:</strong>
+                        <input type="text" name="age" maxlength="2" max="6">
+                    <strong>Personality type:</strong> 
+                        <input type="text" name="personality" max="6"> 
+                        <label>(<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp"> Don't know your type?)</a> </label>
+                    <strong>Favourite OS:</strong> <select name="favos" id="">
+                                    <option value="windows98" selected>Windows</option> 
+                                    <option value="macos">Mac OS X</option>                                
+                                    <option value="lin">Linux</option>
+                                    </select>
+                    <strong>Seeking age:</strong> <input type="text" name="min" placeholder="min" max="6" maxlength="2"> to 
+                                    <input type="text" name="max" placeholder="max" max="6" maxlength="2">
+                    <input type="submit" value="Sign Up">
+                </fieldset>
+            </form>
+        </div>
+        
 
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbquest.github.io%2FNerdLuv%2Fsignup.html"> 
             <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/></a>
