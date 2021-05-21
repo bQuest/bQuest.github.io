@@ -13,6 +13,8 @@ body {
 .top {
     background-image: url("images/bannerbg.png");
     background-repeat: repeat-y;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -26,8 +28,19 @@ h1 {
 .content {
     width: 800px;
     align-content: center;
-    border: 4px;
-    border-color: gray;
-    border-style: solid;
+    border: 4px solid gray;
     border-radius: 20px;
+}
+
+.overview {
+    float: right;
+    width: 250px;
+    background-color: #a2b964;
+    padding: 10pt;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+.after-div {
+    clear: right;
 }
