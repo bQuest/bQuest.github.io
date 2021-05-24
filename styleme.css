@@ -16,8 +16,7 @@ p {
 }
 
 img {
-    width: auto;
-    height: auto;
+    width: 200px;    
 }
 
 .inline {
