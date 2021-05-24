@@ -1,6 +1,9 @@
 function display() {
     alert("Hello, world");
-    document.getElementById('summary').style.fontSize = "24pt";
+    //document.getElementById('summary').style.fontSize = "24pt";
+    let textArea = document.getElementById('summary');
+    let size = parseInt(textArea.style.fontSize);
+    textArea.style.fontSize = size + 2 + "px";
 }
 
 function popAlert(){
@@ -19,5 +22,4 @@ function popAlert(){
         textArea.style.color = "";
         textArea.style.textDecoration = "";
     }
-
 }
