@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <link rel="stylesheet" href="ascii.css">
+    <script src="ascii.js"></script>
+    <script src="animations.js"></script>
+</head>
+
+<body>
+    <h1>CS472: ASCII Animation Viewer</h1>
+    <textarea name="view" id="animationview" cols="80" rows="20"></textarea>
+    <div>
+        <fieldset>
+            <legend>Play Controls:</legend>
+            <input type="button" value="Start">
+            <input type="button" value="Stop">
+        </fieldset>
+        <fieldset>
+            <legend>Animation</legend>
+            <select name="" id="animations">
+                <option value="blank" selected>Blank</option>
+                <option value="exercise">exercise</option>
+                <option value="juggler">Juggler</option>
+                <option value="bike">Bike</option>
+                <option value="dive">Dive</option>
+                <option value="custom">Custom</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Font Size</legend>
+            <select name="" id="fontSizes">
+                <option value="tiny" selected>Tiny (7pt)</option>
+                <option value="small">Small (10pt)</option>
+                <option value="medium" selected>Medium (12pt)</option>
+                <option value="large">Large (16pt)</option>
+                <option value="xlarge">Extra Large (24pt)</option>
+                <option value="xxlarge">XXL (32pt)</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Speed</legend>
+            <input type="checkbox" name="" id="animationSpeed"> Turbo
+        </fieldset>
+    </div>
+</body>
+
+</html>
