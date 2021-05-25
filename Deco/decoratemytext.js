@@ -1,5 +1,5 @@
 window.onload = function () {
-    document.getElementById('summary').onclick = display;
+    document.getElementById('increaseFont').onclick = display;
 };
 
 function increaseFont() {
@@ -24,9 +24,14 @@ function popAlert() {
         textArea.style.fontWeight = 'bold';
         textArea.style.color = 'green';
         textArea.style.textDecoration = 'underline';
+        document.body.style.backgroundImage = "URL('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
     } else {
         textArea.style.fontWeight = "";
         textArea.style.color = "";
         textArea.style.textDecoration = "";
     }
+}
+
+function replaceWords() {
+
 }
