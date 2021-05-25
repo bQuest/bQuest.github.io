@@ -2,15 +2,16 @@ window.onload = function () {
     document.getElementById('summary').onclick = display;
 };
 
-function display() {
-    alert("Hello, world");
-
+function increaseFont() {
+    //alert("Hello, world");
     let textArea = document.getElementById('summary');
     let size = parseInt(window.getComputedStyle(textArea, null).getPropertyValue('font-size'));
     textArea.style.fontSize = size + 2 + "px";
 }
 
-
+function display() {
+    setInterval(increaseFont, 500);
+}
 
 function popAlert() {
     alert('You changed me: ' + document.getElementById("blingCheckbox").name);
