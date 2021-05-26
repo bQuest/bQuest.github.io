@@ -19,8 +19,21 @@ textarea {
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 fieldset {
     border: 5px solid black;
+    padding: 4px;
+    display: inline;
+}
+
+.bot {
+    overflow: hidden;
+    margin: auto;     
+    width: 50%; 
+}
+
+footer {
+    float: right;
 }
