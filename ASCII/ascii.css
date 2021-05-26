@@ -37,3 +37,6 @@ fieldset {
 footer {
     float: right;
 }
+footer img {
+    display:block;
+}

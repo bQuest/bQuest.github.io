@@ -15,12 +15,12 @@
     <div class="bot">
         <fieldset>
             <legend>Play Controls:</legend>
-            <input type="button" value="Start">
-            <input type="button" value="Stop">
+            <input id="btnstart" type="button" value="Start">
+            <input id="btnstop" type="button" value="Stop">
         </fieldset>
         <fieldset>
             <legend>Animation</legend>
-            <select name="" id="animations">
+            <select name="ani" id="animations">
                 <option value="blank" selected>Blank</option>
                 <option value="exercise">exercise</option>
                 <option value="juggler">Juggler</option>
@@ -31,33 +31,34 @@
         </fieldset>
         <fieldset>
             <legend>Font Size</legend>
-            <select name="" id="fontSizes">
-                <option value="tiny" selected>Tiny (7pt)</option>
-                <option value="small">Small (10pt)</option>
-                <option value="medium" selected>Medium (12pt)</option>
-                <option value="large">Large (16pt)</option>
-                <option value="xlarge">Extra Large (24pt)</option>
-                <option value="xxlarge">XXL (32pt)</option>
+            <select name="font" id="fontSizes">
+                <option value="7">Tiny (7pt)</option>
+                <option value="10">Small (10pt)</option>
+                <option value="12" selected>Medium (12pt)</option>
+                <option value="16">Large (16pt)</option>
+                <option value="24">Extra Large (24pt)</option>
+                <option value="32">XXL (32pt)</option>
             </select>
         </fieldset>
         <fieldset>
             <legend>Speed</legend>
-            <input type="checkbox" name="" id="animationSpeed"> Turbo
+            <input type="checkbox" name="speed" id="animationSpeed"> Turbo
         </fieldset>
     </div>
 
     <script src="ascii.js"></script>
     <script src="animations.js"></script>
     <footer>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbquest.github.io%2F">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbquest.github.io%2FASCII%2Fascii.html">
             <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
         </a>
         <a
-            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbquest.github.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fbquest.github.io%252FASCII%252Fascii.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
             <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="Valid CSS!" />
         </a>
-        <a href="http://mumstudents.org/jshint/referer.php"><img src="http://mumstudents.org/jshint/jshint-small.png"
-                alt="Valid JS">
+        <a
+            href="http://mumstudents.org/jshint/check.php?v=jslint&uri=https%3A%2F%2Fbquest.github.io%2FASCII%2Fascii.html">
+            <img src="http://mumstudents.org/jshint/jshint-small.png" alt="Valid JS">
         </a>
     </footer>
 </body>
