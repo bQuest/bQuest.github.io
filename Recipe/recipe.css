@@ -1,5 +1,8 @@
 body{
     background-color:white;
+    background-image: url("/Recipe/images/silverware.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Gramond, sans-serif;
@@ -24,8 +27,13 @@ a {
     color: #a4a400;
 }
 
-.quot {
+pre {
+    font-family: monospace;
+}
+
+blockquote {
     background-color: #ffffa8;
+    font-style: italic;
 }
 
 .copyright {
