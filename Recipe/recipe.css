@@ -1,4 +1,4 @@
-body{
+body {
     background-color:white;
     background-image: url("/Recipe/images/silverware.jpg");
     background-repeat: repeat;
@@ -6,6 +6,10 @@ body{
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Gramond, sans-serif;
+}
+
+#imgmenu {
+    list-style: none;
 }
 
 h1, h2 {
@@ -43,3 +47,4 @@ blockquote {
 div .copyright {
     width: 200px;
 }
+
