@@ -1,6 +1,6 @@
 "use strict"
 
-var rudyTimer = (function () {
+var rudyTimer = function () {
     alert('yea');
     let timer = null;// stores ID of interval timer 
     function delayMsg2() {
@@ -14,7 +14,7 @@ var rudyTimer = (function () {
     function rudy() {// called each time the timer goes off
         document.getElementById("output").innerHTML += " Rudy!";
     }
-})();
+}();
 
 
 x = 1;
