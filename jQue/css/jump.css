@@ -3,7 +3,6 @@ div {
   height: 245px;
   text-align: left;
   border: solid #000 3px;
-  border-color: red;
 }
 #header {
   width: 100%;
