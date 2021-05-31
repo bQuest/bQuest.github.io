@@ -9,14 +9,29 @@
 </head>
 
 <body>
-    <ul>
+    <!-- <ul>
         <li> list item
-            <!--<dl>definition list</dl>-->
+            <dl>definition list</dl>
             <dt>definition term</dt>
             <dd>definition</dd>
         </li>
         <li>next list item</li>
-    </ul>
+    </ul> -->
+
+    <label id="d"></label>
+    <input type="text" placeholder="input here" id="inp">
+    <button id="cl">Click</button>
+
+    <script>
+        //calling a function with parameters
+        
+        document.getElementById("cl").onclick  = display;
+        
+        function display() {
+            var text = document.getElementById("inp").value;
+            alert(text);
+        }
+    </script>
 </body>
 
 </html>
