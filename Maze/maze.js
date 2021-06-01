@@ -1,9 +1,11 @@
 $(document).ready(function(){
     //click start >> move the mouse through the maze >> reach end
     var mouseover = false;
+    var initialmsg = $("h2#status").html();
     
     function losefn () {
         $(".boundary").addClass("youlose");
+        displayMsg("You Lose")
         mouseover = true;
     }
     
@@ -16,7 +18,7 @@ $(document).ready(function(){
     $("#end").mouseenter(function () {
         if(!mouseover){
             displayMsg("You Win");
-             alert("You win");
+            //  alert("You win");
         }        
     });    
 
@@ -25,6 +27,7 @@ $(document).ready(function(){
         $(".boundary").removeClass("youlose");
         displayMsg("You lose");
         mouseover = false;
+        $("h2#status").html(initialmsg);
     });
 
     $("#maze").mouseleave(losefn);
