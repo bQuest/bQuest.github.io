@@ -1,27 +1,32 @@
 $(document).ready(function(){
     //click start >> move the mouse through the maze >> reach end
     var mouseover = false;
-    $(".boundary").mouseover(function(){
+    
+    function losefn () {
         $(".boundary").addClass("youlose");
         mouseover = true;
-    });
-
-    displayWin();    
-    function displayWin(){
-        if(mouseover){
-            $("#end").mouseenter(function(){
-                alert("You win!");
-            });
-        }
-        
-    }   
-
+    }
     
+    function displayMsg(msg) {
+        $("h2#status").text(msg);
+    }
+
+    $(".boundary").mouseover(losefn);
+
+    $("#end").mouseenter(function () {
+        if(!mouseover){
+            displayMsg("You Win");
+             alert("You win");
+        }        
+    });    
 
     $("#start").click(function() {
         //alert("you clicked start");
         $(".boundary").removeClass("youlose");
+        displayMsg("You lose");
         mouseover = false;
     });
+
+    $("#maze").mouseleave(losefn);
 
 });
