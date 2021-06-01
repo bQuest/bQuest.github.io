@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     function losefn () {
         $(".boundary").addClass("youlose");
-        displayMsg("You Lose")
+        displayMsg("You Lose");
         mouseover = true;
     }
     
