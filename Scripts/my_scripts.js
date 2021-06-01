@@ -22,7 +22,7 @@ $(document).ready(function () {
   hideCode();
   function checkForCode() {
     var discount;
-    if ($.contains(this, document.getElementById("has_discount"))) {
+    if ($.contains(this, $("#has_discount"))) {
       var my_num = getRandom(100);
       discount = "<p>Your Discount is " + my_num + "%</p>";
     } else {
