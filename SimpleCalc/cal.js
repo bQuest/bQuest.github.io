@@ -3,39 +3,25 @@ var url = require('url');
 var fs = require('fs');
 var calmod = require('./calmodule.js');
 
-// http.createServer(function (req, res) {
-//     var q = url.parse(req.url, true);
-//     var filename = "." + q.pathname;
-//     fs.readFile(filename, function (err, data) {
-//         if (err) {
-//             res.writeHead(404, { 'Content-Type': 'text/html' });
-//             return res.end("404 Not Found");
-//         } 
-//         res.writeHead(200, { 'Content-Type': 'text/html' });
-//         res.write(data);
-//         return res.end();
-//     });
-// }).listen(8089);
-
-http.createServer(function (req, res) {
+const srv = http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
-    fs.readFile('./calcform.html', function(err, data){
+    fs.readFile('./calcform.html', function(err, data){        
         var filename = "." + q.pathname;
-        if (q.pathname == "/cal.js") {
-            switch(q.operator) {
-                case "+":
-                    calmod.add(req, res, q.query);
-                    break;
-                case "/":
-                    calmod.divide(req, res, q.query);
-                    break;
-                case "*":
-                    calmod.multiply(req, res, q.query);
-                    break;
-                case "-":
-                    calmod.subtract(req, res, q.query);
-                    break;
+        debugger;
+        if (q.pathname == "./cal.js") { 
+            if (q.query.operator == '+')
+                calmod.add(req, res, q.query);
+            else if (q.query.operator == '/')
+                calmod.divide(req, res, q.query);
+            else if (q.query.operator === '*')
+                calmod.multiply(req, res, q.query);
+            else if (q.query.operator === '-')
+                calmod.subtract(req, res, q.query);
+            else {
+                console.log("no valid operator selected.");
+                throw err;
             }
+                
         }  
         else
             fs.readFile(filename, function (err, data) {
@@ -49,4 +35,6 @@ http.createServer(function (req, res) {
             });
     });
     
-}).listen(8099);
+});
+
+srv.listen(8090);
