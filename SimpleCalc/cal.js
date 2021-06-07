@@ -7,7 +7,7 @@ const srv = http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     fs.readFile('./calcform.html', function(err, data){        
         var filename = "." + q.pathname;
-        debugger;
+        
         if (q.pathname == "./cal.js") { 
             if (q.query.operator == '+')
                 calmod.add(req, res, q.query);
