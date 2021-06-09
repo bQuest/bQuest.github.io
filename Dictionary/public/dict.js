@@ -1,18 +1,18 @@
-const sql = require('mysql');
+'use strict';
 
-const connecton = sql.createConnection({
-    host: 'localhost',
-   // port: 3306,
-    user: 'newuser',
-    password: 'Pa$$w0rd123',
-    database: 'entries',
-    
-});
+$(document).ready(function() {       
+    $('#search').click(() => {
+        var term = $('#term').val();
+        alert(term);
+        $.post('/')
+            .done((entries) => {
+                console.log(entries);
+            })
+            .fail(() => alert("error"))
+            .always(() => $('#loader').hide());
 
-connecton.connect(function(er){
-    if(er) throw er;
-    connecton.query("select count(*) from entries", function(err, result, fields){
-        if(err) throw err;
-        console.log(result);
+        $('#loader').show();
     });
+
+    //
 });
