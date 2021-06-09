@@ -3,10 +3,11 @@
 $(document).ready(function() {       
     $('#search').click(() => {
         var term = $('#term').val();
-        alert(term);
+        
         $.post('/')
-            .done((entries) => {
-                console.log(entries);
+            .done(() => {
+                //display content in page
+                alert(`term: ${term} success`);
             })
             .fail(() => alert("error"))
             .always(() => $('#loader').hide());
