@@ -3,16 +3,21 @@
 $(document).ready(function() {       
     $('#search').click(() => {
         var term = $('#term').val();
-        
-        $.post('/')
-            .done(() => {
-                //display content in page
-                alert(`term: ${term} success`);
-            })
-            .fail(() => alert("error"))
-            .always(() => $('#loader').hide());
 
-        $('#loader').show();
+        $.ajax({
+            url : '/',
+            method: 'POST',
+            contentType : 'application/json',
+            data: JSON.stringify({ word: $('#term').val() }),
+            success : function(response) { 
+                alert('hi')   ;
+                
+               response.words.forEach(element => {
+                   $('#result').html(`<ol><li>${element}</li></ol>`);
+               });
+            },
+            fail : () => alert('failed')
+        });
     });
 
     //
