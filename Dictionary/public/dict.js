@@ -8,13 +8,13 @@ $(document).ready(function() {
             url : '/',
             method: 'POST',
             contentType : 'application/json',
-            data: JSON.stringify({ word: $('#term').val() }),
+            data: JSON.stringify({ dicWord: $('#term').val() }),
             success : function(response) { 
-                alert('hi')   ;
+            //     alert('hi')   ;
                 
-               response.words.forEach(element => {
-                   $('#result').html(`<ol><li>${element}</li></ol>`);
-               });
+            //    response.words.forEach(element => {
+            //        $('#result').html(`<ol><li>${element}</li></ol>`);
+            //    });
             },
             fail : () => alert('failed')
         });

@@ -5,9 +5,11 @@ var bodyParser = require("body-parser");
 
 const app = express();
 
+app.set('view engine', 'jade');
 //load public folder
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
+app.use(express.json());
 // app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {    
@@ -18,7 +20,7 @@ app.post('/', (req, res) => {
 
     const sql = require('mysql');
 
-    var par = req.body.word;
+    var par = req.body.dicWord;
     var q = "SELECT wordtype, definition FROM entries.entries WHERE word LIKE " + sql.escape(par);
     
     console.log(`q: ${q}`);
@@ -36,7 +38,8 @@ app.post('/', (req, res) => {
         connecton.query(q, function (err, result, fields) {
             if (err) throw err;
             //  res.json(result);
-            res.send(JSON.stringify(result));
+            // res.send(JSON.stringify(result));
+            res.render('dict', {title: 'WAP', words: result});
         });
     });
 

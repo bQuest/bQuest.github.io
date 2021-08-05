@@ -1,0 +1,10 @@
+html
+    head
+        title = title
+        link(rel = "stylesheet", href = "dict.css")
+    body
+        input(type = "text", name = "termW")
+        ol
+            each term in words
+                li = `(${term.wordtype}) : ${term.definition}`
+        a(href = "http://localhost:8000/dict.html")
